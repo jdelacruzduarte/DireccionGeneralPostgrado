@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.master.cs" Inherits="DireccionGeneralPostGrado.Login" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="~/Content/style.css" />
+    <link rel="shortcut icon" type="image/jpeg" href="~/imagenes/Icono-UASD.jpg" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.dropotron-1.0.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.slidertron-1.1.js"></script>
+  
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style7 {
+            width: 100%;
+        }
+        .auto-style8 {
+            text-align: center;
+            width: 94px;
+        }
+        .auto-style12 {
+            text-align: center;
+          /*  width: 797px;*/
+        }
+        .auto-style13 {
+            text-align: center;
+            width: 874px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper">
+	<div id="header">
+		<table class="auto-style7">
+            <tr>
+                <td class="auto-style8" rowspan="2">
+                    <asp:Image ID="Image1" runat="server" Height="100px" ImageUrl="~/Imagenes/Logo-UASD.png" Width="100px" />
+                </td>
+                <td class="auto-style12">
+                    <asp:Label ID="Label3" runat="server" Font-Size="XX-Large" Text="Universidad Aut&oacutenoma de Santo Domingo"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style12">
+                    <asp:Label ID="Label1" runat="server" Font-Size="X-Large" Text="Direcci&oacuten General de Postgrado"></asp:Label>
+                </td>
+            </tr>
+            </table>
+	</div>
+	
+
+	<div id="page">
+		<div id="content" class="auto-style12">
+			
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            <div class="auto-style13">
+            </div>
+        
+        </asp:ContentPlaceHolder>
+    
+		</div>
+		
+		<br class="clearfix" />
+	</div>
+	<div id="page-bottom">
+		<div id="page-bottom-content">
+			<h3>Magnis hendrerit erat</h3>
+			<p>
+				Euismod sodales sociis hendrerit pulvinar acursus urna. Consectetur egestas sodales at ornare laoreet turpis. Lorem id sapien ridiculus sagittis imperdiet urna suspendisse. Posuere arcu parturient quam risus. Aliquam nullam magnis integer gravida vulputate felis. Consectetur montes sollicitudin dictum. Auctor sociis hendrerit pulvinar acursus urna lorem ipsum dolor vivamus pulvinar libero. Massa egestas cubilia lacus augue mattis consectetur.
+			</p>
+		</div>
+		<div id="page-bottom-sidebar">
+			<h3>Sed interdum</h3>
+			<ul class="list">
+				<li class="first"><a href="#">Suspendisse ultricies</a></li>
+				<li><a href="#">Tortor mollis enim</a></li>
+				<li class="last"><a href="#">Lorem enim tempor</a></li>
+			</ul>
+		</div>
+		<br class="clearfix" />
+	</div>
+</div>
+    
+    </form>
+    <div id="footer">
+	 <p>&copy; <%: DateTime.Now.Year %> Universidad Aut&oacutenoma de Santo Domingo - Direcci&oacuten General de Postgrado</p>
+</div>
+</body>
+</html>
