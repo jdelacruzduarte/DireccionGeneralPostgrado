@@ -1,11 +1,10 @@
-﻿{
+{
   "version": "1.0.0-*",
   "description": "DireccionGeneralPostGrado.AccesoDatos Class Library",
   "authors": [ "Jesus" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
-
   "frameworks": {
     "net451": { },
     "dotnet5.4": {
@@ -17,5 +16,18 @@
         "System.Threading": "4.0.11-beta-23516"
       }
     }
+  },
+  
+  "commands": {
+    "gen": "Microsoft.Extensions.CodeGeneration",
+    "run": "run server.urls=http://localhost:5003",
+    "web": "Microsoft.AspNet.Server.Kestrel",
+    "kestrel": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.Kestrel --server.urls http://localhost:5004",
+    "weblistener": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5002"
+  },
+  "dependencies": {
+    "AjaxControlToolkit": "16.1.1",
+    "jQuery": "3.1.1",
+    "jQuery.Validation": "1.16.0"
   }
 }

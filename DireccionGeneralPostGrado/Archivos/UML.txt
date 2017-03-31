@@ -1,0 +1,8 @@
+
+A partir de Netbeans 6.8, el IDE no trae el plugin de UML por defecto. Para poder instalarlo, hay que añadir a NetBeans una nueva fuente de plugins: 
+En Tools->Plugins, seleccionar la pestaña Settings. Allí se ven los distintos Centros de Actualizaciones. 
+Pulsar el botón Add, y en la nueva ventana introducir el nombre "UML", o como deseemos, y la siguiente URL: 
+
+http://deadlock.netbeans.org/hudson/job/uml/lastSuccessfulBuild/artifact/build/updates/updates.xml 
+
+En Nombre De Proveedor Ponen UML o lo que ustedes quieran

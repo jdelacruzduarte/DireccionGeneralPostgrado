@@ -11,7 +11,13 @@ namespace DireccionGeneralPostGrado
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            labUsuario.Text = Session["usuario"].ToString();                   
+        }
 
+        protected void butCerrar_Click(object sender, EventArgs e)
+        {
+            Session.RemoveAll();
+            Response.Redirect("Login.aspx");
         }
     }
 }

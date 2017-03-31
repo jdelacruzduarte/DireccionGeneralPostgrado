@@ -11,6 +11,7 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="/Scripts/jquery.dropotron-1.0.js"></script>
     <script type="text/javascript" src="/Scripts/jquery.slidertron-1.1.js"></script>
+      
     <script type="text/javascript">
 	$(function() {
 		$('#menu > ul').dropotron({
@@ -62,7 +63,10 @@
                     <asp:Label ID="Label3" runat="server" Font-Size="XX-Large" Text="Universidad Aut&oacutenoma de Santo Domingo"></asp:Label>
                 </td>
                 <td class="auto-style12" rowspan="2">
-                    <asp:Label ID="Label2" runat="server" Font-Size="Medium" Text="Usuario"></asp:Label>
+                    <asp:Label ID="Label4" runat="server" Text="Usuario: "></asp:Label>
+                    <asp:Label ID="labUsuario" runat="server" Font-Size="Medium" Text="nickName"></asp:Label>
+                    <br />
+                    <asp:LinkButton ID="butCerrar" runat="server" ForeColor="White" OnClick="butCerrar_Click">Cerrar Sección</asp:LinkButton>
                 </td>
             </tr>
             <tr>
@@ -72,13 +76,14 @@
             </tr>
         </table>
 	</div>
-	<div id="menu">
+        <center>
+	<div id="menu" >
 		<ul class="auto-style11">
 			<li class="first">
 				<span class="opener">Entrada<b></b></span>
 				<ul>
 					<li><a href="RegistrarEntrada.aspx">Registrar</a></li>
-					<li><a href="Buscar.aspx">Buscar</a></li>
+					<li><a href="BuscarEntrada.aspx">Buscar</a></li>
 					<li><a href="#">Modificar</a></li>
 					<li>
 						<span>Sed Tempus<b></b></span>
@@ -98,8 +103,8 @@
 			<li class="first">
 				<span class="opener"  >  Salida<b></b></span>
 				<ul>
-					<li><a href="RegistrarEntrada.aspx">Registrar</a></li>
-					<li><a href="Buscar.aspx">Buscar</a></li>
+					<li><a href="RegistrarSalida.aspx">Registrar</a></li>
+					<li><a href="BuscarEntrada.aspx">Buscar</a></li>
 					<li><a href="#">Modificar</a></li>
 					
 				</ul>
@@ -126,7 +131,7 @@
 				</ul>
 			</li>
 			<li>
-				<span class="opener">Verificacion de Expediente<b></b></span>
+				<span class="opener">Expediente<b></b></span>
 				<ul>
 					<li><a href="#">Lorem Ipsum</a></li>
 					<li><a href="#">Consequat Dolor</a></li>
@@ -146,12 +151,26 @@
 					<li><a href="#">Amet Phasellus</a></li>
 				</ul>
 			</li>
-			<li><a href="#">Administracion</a></li>
-			
+			<li>
+				<span class="opener">Administración<b></b></span>
+				<ul>
+					
+					<li>
+						<span>Usuario<b></b></span>
+						<ul>
+							<li><a href="CrearUsuario.aspx">Registrar</a></li>
+							<li><a href="BuscarUsuario.aspx">Buscar</a></li>
+							<li><a href="#">Editar</a></li>							
+						</ul>
+					</li>
+					<li><a href="#">Etiam Nullam</a></li>
+					<li><a href="#">Amet Phasellus</a></li>
+				</ul>
+			</li>
 		</ul>
 		<br class="clearfix" />
 	</div>
-
+            </center>
 	<div id="page">
 		<div id="content" class="auto-style12">
 			
@@ -187,7 +206,7 @@
     
     </form>
     <div id="footer">
-	 <p>&copy; <%: DateTime.Now.Year %> Universidad Aut&oacutenoma de Santo Domingo - Direcci&oacuten General de Postgrado</p>
+	 <p>&copy; <%: DateTime.Now.Year %>Universidad Aut&oacutenoma de Santo Domingo - Direcci&oacuten General de Postgrado</p>
 </div>
 </body>
 </html>

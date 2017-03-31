@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DBclass">
+  <DataContextMoniker Name="/DBclassDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a5ac6dc5-ff7b-4736-aaba-b0ddb0c27ee9" absoluteBounds="6.375, 1.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DBclassDataContext/TBusr" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cb919aff-a7fe-4af2-a4d5-f86fec81009d" absoluteBounds="6.39, 1.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fdd5996e-0c7b-4538-9355-235141de5076" absoluteBounds="2.5, 0.875, 2, 2.5401025390625">
+      <DataClassMoniker Name="/DBclassDataContext/TBent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="05413672-86c7-44a7-adf5-ab4b07492fe4" absoluteBounds="2.515, 1.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.375 : 2.32774983723958); (4.5 : 2.32774983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBclassDataContext/TBusr/TBusr_TBent" />
+      <nodes>
+        <classShapeMoniker Id="a5ac6dc5-ff7b-4736-aaba-b0ddb0c27ee9" />
+        <classShapeMoniker Id="fdd5996e-0c7b-4538-9355-235141de5076" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

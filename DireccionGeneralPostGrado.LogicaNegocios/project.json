@@ -18,6 +18,9 @@
     }
   },
   "dependencies": {
-    "DireccionGeneralPostGrado.AccesoDatos": "1.0.0-*"
+    "AjaxControlToolkit": "16.1.1",
+    "DireccionGeneralPostGrado.AccesoDatos": "1.0.0-*",
+    "jQuery": "3.1.1",
+    "jQuery.Validation": "1.16.0"
   }
 }
